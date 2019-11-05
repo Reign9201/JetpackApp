@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/home"
+    android:id="@+id/main_navigation">
+
+    <!--首页-->
+    <fragment
+        android:id="@+id/home"
+        android:name="com.yancy.jetpackapp.ui.fragment.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <argument
+            android:name="email"
+            android:defaultValue="905298528@qq.com"
+            app:argType="string" />
+    </fragment>
+
+    <!--任务市场-->
+    <fragment
+        android:id="@+id/task_market"
+        android:name="com.yancy.jetpackapp.ui.fragment.TaskMarketFragment"
+        android:label="TaskMarketFragment"
+        tools:layout="@layout/fragment_task_market" />
+
+    <!--我的任务-->
+    <fragment
+        android:id="@+id/my_task"
+        android:name="com.yancy.jetpackapp.ui.fragment.MyTaskFragment"
+        android:label="MyTaskFragment"
+        tools:layout="@layout/fragment_my_task" />
+
+    <!--我的-->
+    <fragment
+        android:id="@+id/mine"
+        android:name="com.yancy.jetpackapp.ui.fragment.MineFragment"
+        android:label="MineFragment"
+        tools:layout="@layout/fragment_mine" />
+
+</navigation>
